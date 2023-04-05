@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMuainGamee Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="icon" type="image/jpeg" href="./img/favicon.jpg">
+    <script src="./scripts.js"></script>
+
+</head>
+
+<body>
+    <header class="sticky">
+        <a href="" class="logo">SMuainGamee</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#tournaments">Youtube</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><box-icon name='search-alt-2'></box-icon></a>
+                <input type="text" placeholder="Cari Games">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu()"></div>
+    </header>
+    <!-- home banner -->
+    <div class="banner animeX" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>Temukan Game<br>Terbaru dan Klasik Favoritmu</h2>
+                <p>Selamat datang di SMuainGamee - rumah baru bagi para pecinta game! Temukan daftar lengkap game
+                    terbaru dan klasik favoritmu di sini. Unduh sekarang untuk pengalaman gaming yang lebih seru!</p>
+                <a href="#games" class="btn">Unduh Sekarang</a>
+            </div>
+            <img src="./img/assasin.png" alt="banner">
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about animeX" id="about">
+        <div class="contentBx">
+            <h2>Tentang Kami</h2>
+            <p>SMuainGamee adalah website yang menyediakan daftar game lengkap dan terbaru dengan link Unduh yang
+                tersedia. Kami berkomitmen untuk memberikan pengalaman terbaik bagi para pengunjung dengan menyediakan
+                informasi game terpercaya dan mudah diakses. Kami juga selalu memperbarui daftar game kami untuk
+                memastikan pengunjung kami selalu mendapatkan informasi game yang terbaru dan menarik. Dengan demikian,
+                SMuainGamee menjadi pilihan yang tepat bagi para gamer yang ingin menemukan game terbaik dan dapat
+                diunduh dengan mudah.
+            </p>
+            <!-- <a href="#">Read More</a> -->
+        </div>
+        <img src="./img/videogame.png" alt="videogame">
+    </div>
+    <!-- Games -->
+    <div class="games animeX" id="games">
+        <h2>Daftar Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">Semua Game</li>
+            <li class="list" data-filter="casual">Kasual</li>
+            <li class="list" data-filter="action">Aksi</li>
+            <li class="list" data-filter="adventure">Petualangan</li>
+            <li class="list" data-filter="racing">Balapan</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="casual">
+                <img src="./img/despicable me-the game.png" alt="">
+                <div class="content">
+                    <h4>Despicable Me: The Game</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>6 Juli 2010</span></p>
+                        <a href="https://www.mediafire.com/file/86mfdl4o09yx5r3/Despicable+Me+by+GENERASI+GAMERS.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/hellboy.jpg" alt="">
+                <div class="content">
+                    <h4>Hellboy</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>12 April 2019</span></p>
+                        <a href="https://www.mediafire.com/file/cpmf4hzsej5x0oe/HELLBOY_Smuain_Gamee.zip/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/assasin creed bloodlines.jpg" alt="">
+                <div class="content">
+                    <h4>Assasin's Creed Bloodlines</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>17 November 2009</span></p>
+                        <a href="https://www.mediafire.com/file/iembwlmz6qjrwzd/ASSASSINS+CREED+BLOODLINES+By+MA+Gamerz.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/despicable me-the game.png" alt="">
+                <div class="content">
+                    <h4>Despicable Me: The Game</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>6 Juli 2010</span></p>
+                        <a href="https://www.mediafire.com/file/86mfdl4o09yx5r3/Despicable+Me+by+GENERASI+GAMERS.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/lego star war3.jpg" alt="">
+                <div class="content">
+                    <h4>Lego Star Wars 3</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>22 Maret 2011</span></p>
+                        <a href="https://www.mediafire.com/file/xc29azipzabmzb9/LEGO_Star_Wars_III_The_Clone_Wars_Eng_iso.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/spiderman 3.jpg" alt="">
+                <div class="content">
+                    <h4>Spiderman 3</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>4 Mei 2007</span></p>
+                        <a href="https://www.mediafire.com/file/dsa4ap5b7g27ajk/SPIDERMAN+3+PSP+ISO+By+(Kifly+Gamerz).7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/god of war sparta.jpg" alt="">
+                <div class="content">
+                    <h4>God of War: Ghost of Sparta</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>2 November 2010</span></p>
+                        <a href="https://www.mediafire.com/file/3e15cfgj0z43cj6/God+of+War+Ghost+Of+Sparta+PSP+By+(Kifly+Gamerz).7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/ben10.jpg" alt="">
+                <div class="content">
+                    <h4>Ben10</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>15 November 2007</span></p>
+                        <a href="https://www.mediafire.com/file/0s0v8cse5kxr8w8/Ben+10+-+Protector+of+Earth+by+ansil+droid.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/Spongebobs the yellow Avengers.jpg" alt="">
+                <div class="content">
+                    <h4>Spongebobs: The Yellow Avengers</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>23 April 2019</span></p>
+                        <a href="https://www.mediafire.com/file/ns5w5b7oragrt1t/SpongeBob_Squarepants_The_Yellow_Avenger.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="adventure">
+                <img src="./img/hellboy.jpg" alt="">
+                <div class="content">
+                    <h4>Hellboy</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>12 April 2019</span></p>
+                        <a href="https://www.mediafire.com/file/cpmf4hzsej5x0oe/HELLBOY_Smuain_Gamee.zip/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="action">
+                <img src="./img/spiderman 3.jpg" alt="">
+                <div class="content">
+                    <h4>Spiderman 3</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>4 Mei 2007</span></p>
+                        <a href="https://www.mediafire.com/file/dsa4ap5b7g27ajk/SPIDERMAN+3+PSP+ISO+By+(Kifly+Gamerz).7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="adventure">
+                <img src="./img/assasin creed bloodlines.jpg" alt="">
+                <div class="content">
+                    <h4>Assasin's Creed Bloodlines</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>17 November 2009</span></p>
+                        <a href="https://www.mediafire.com/file/iembwlmz6qjrwzd/ASSASSINS+CREED+BLOODLINES+By+MA+Gamerz.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="adventure">
+                <img src="./img/lego star war3.jpg" alt="">
+                <div class="content">
+                    <h4>Lego Star Wars 3</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>22 Maret 2011</span></p>
+                        <a href="https://www.mediafire.com/file/xc29azipzabmzb9/LEGO_Star_Wars_III_The_Clone_Wars_Eng_iso.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="adventure">
+                <img src="./img/scoby doo.jpg" alt="">
+                <div class="content">
+                    <h4>Scoobydoo</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>15 Mei 2020</span></p>
+                        <a href="https://www.mediafire.com/file/51sd21qzxjzobz1/Scoobydoo+smuain+gamee.zip/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="adventure">
+                <img src="./img/ben10.jpg" alt="">
+                <div class="content">
+                    <h4>Ben10</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>15 November 2007</span></p>
+                        <a href="https://www.mediafire.com/file/0s0v8cse5kxr8w8/Ben+10+-+Protector+of+Earth+by+ansil+droid.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="adventure">
+                <img src="./img/god of war sparta.jpg" alt="">
+                <div class="content">
+                    <h4>God of War: Ghost of Sparta</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>2 November 2010</span></p>
+                        <a href="https://www.mediafire.com/file/3e15cfgj0z43cj6/God+of+War+Ghost+Of+Sparta+PSP+By+(Kifly+Gamerz).7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="racing">
+                <img src="./img/TagTeamCover.jpg" alt="">
+                <div class="content">
+                    <h4>Crash Tag Team Racing</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Rilis:<br><span>19 Oktober 2005</span></p>
+                        <a href="https://www.mediafire.com/file/65oxukg1i79xyep/Crash+Tag+Team+Racing.7z/file">Unduh</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tournament -->
+    <div class="tournaments animeX" id="tournaments">
+        <h2>Channel Youtube</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="./img/yt1.jpg" width="500" height="300" alt="tournaments">
+                <div class="content">
+                    <h4><span>SMuainGamee</span> <br>RILIS! FIFA 23 PPSSPP Ukuran Kecil Di Android Camera PS5 New Update
+                        Winter
+                        Transfer Mod Liga BRI</h4>
+                    <p> Name : FIFA 23<br>
+                        Full Size : 1.2GB<br>
+                        Genre : BOLA<br>
+                        Tema : BOLA<br>
+                        Internet : Offline<br>
+                        Work : Ram 1Gb /ALL DEVICE<br>
+                    </p>
+                    <div class="btn">
+                        <a href="https://youtu.be/d2pc_zu07gA" class="watch">Tonton</a>
+                        <a href="https://www.youtube.com/@smuaingameofficiall" class="join">Subcribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/yt2.jpg" width="500" height="300" alt="tournaments">
+                <div class="content">
+                    <h4><span>SMuainGamee</span><br> Download ULTRAMAN NEXUS<br> Ppsspp Android terbaru 2023 <br> Ukuran
+                        Kecil</h4>
+                    <p>Name : ULTRAMAN NEXUS<br>
+                        Full Size : 400MB<br>
+                        Genre : Aksi<br>
+                        Tema : ULTRAMAN<br>
+                        Internet : Offline<br>
+                        Work : Ram 1Gb /ALL DEVICE
+                    </p>
+                    <div class="btn">
+                        <a href="https://youtube.com/watch?v=DBEfY9T4s8c" class="watch">Tonton</a>
+                        <a href="https://www.youtube.com/@smuaingameofficiall" class="join">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/yt3.jpg" width="500" height="300" alt="tournaments">
+                <div class="content">
+                    <h4><span>SMuainGamee</span><br> Ringan Banget !! Download Naruto Ultimate Ninja 5 Ppsspp Android
+                        Ukuran Kecil Terbaru | Work 100%</h4>
+                    <p> Name : Naruto shipuden Ultimate ninja 5<br>
+                        Full Size :700MB<br>
+                        Genre : AKSI<br>
+                        Tema :TARUNG<br>
+                        Internet : Offline<br>
+                        Work : Ram 1Gb /ALL DEVICE
+                    </p>
+                    <div class="btn">
+                        <a href="https://youtube.com/watch?v=RsEISGahsuI" class="watch">Tonton</a>
+                        <a href="https://www.youtube.com/@smuaingameofficiall" class="join">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact animeX" id="contact">
+        <img src="./img/contact.png" alt="">
+        <form action="https://formspree.io/f/meqwrwkd" method="POST">
+            <div class="form">
+                <h1>Hubungi Kami</h1>
+                <p>Ingin request game kesukaanmu? kirim pesanmu disini!</p>
+                <div class="inputBx">
+                    <p>Nama</p>
+                    <input type="text" id="name" name="name" placeholder="Masukkan Namamu disini.." required>
+                </div>
+                <div class="inputBx">
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" placeholder="Masukkan Email yang valid" required>
+                </div>
+                <!-- <div class="inputBx">
+                    <p>Pesan</p>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Tuliskan pesanmu disini..."
+                        required></textarea>
+                </div> -->
+                <div class="inputBx">
+                    <p>Pesan</p>
+                    <input type="text" id="message" name="message" cols="30" rows="10" placeholder="Tuliskan pesanmu disini..."
+                        required>
+                </div>
+                <div class="inputBx">
+                    <button type="submit">Kirim</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="info">
+            <a href="" class="logo">SMuainGamee</a>
+            <p>Dibuat dengan <i class="bi bi-heart-fill"></i> oleh Muhammad Rendi</p>
+            <p><i class="bi bi-c-square"></i>2023 All right reserved</p>
+            <ul>
+                <li><a href="https://youtube.com/@smuaingameofficiall"><i class="bi bi-youtube"></i></a></li>
+                <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/samsul_a14"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
